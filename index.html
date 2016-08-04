@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <title>메인페이지</title>
     <link rel="stylesheet" href="index_css.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/unit.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        $(function(){
-            function cbg() {
-	            $("body").css("background","#5F5F5F");
-                $("hangang_index.html/body").css("background","#green")
-            }
-            $(document).ready(cbg);
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="/js.js"></script>
+    <style>
+        .home{
+            cursor : pointer;
+            color : white;
+        }
+        .hangang{
+            cursor : pointer;
+            color : white;
+        }
+    </style>
 </head>
 <body>
     <header>
-       <span><a href="/index.html">PROJECT : HANGANG</a></span>
+       <span class="home">PROJECT : HANGANG</span>
        <nav>
            <ul>
-               <li><a href="/index.html">HOME</a></li>
-               <li><a href="/hangang_page.html">HANGANG</a></li>
-               <li>ddd</li>
-               <li>DD</li>
-               <li>DD</li>
+               <li class="home">HOME</li>
+               <li class="hangang">HANGANG</li>
+               <li>SMART SPACE</li>
+               <li>ABOUT US</li>
            </ul>
        </nav>
     </header>
@@ -32,7 +36,17 @@
             <article>
                 <div id="ss_logo">SMART<br>SPACE</div>
             </article>
-            <img src="/이미지/메인이미지1.jpg" alt="">
+                <div class="slide">
+                    <ul>
+                        <li><img src="/이미지/메인이미지1.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지2.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지3.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지4.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지5.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지6.jpg" alt=""></li>
+                        <li><img src="/이미지/메인이미지7.jpg" alt=""></li>
+                    </ul>
+                </div>
         </section>
 </body>
 </html>

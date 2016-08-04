@@ -1,19 +1,16 @@
-*{margin : 0px; padding : 0px;}
-a{
-    text-decoration : none;
-    color : white;
-}
+*{margin : 0px; padding : 0px; transition : 2s;}
 body{
     background-color: #5F5F5F;
-    transition : 4s;
+    overflow-y: hidden;
 }
 Header{
     width: 1600px;
     height: 150px;
-            
+    background-color: #5F5F5F;
+    
     margin : 0 auto;
 }
-Header span a{
+Header span{
     text-align : left;
     line-height : 150px;
     font-size : 7em;
@@ -48,26 +45,22 @@ section{
     color : #281277;
 }
 article{
-    
+    width: 470px;
+    height: 750px;
 }
 #ss_logo{
     border-top: 5px solid black;
     border-bottom : 5px solid black;
-            
+    
+    margin-left  : 130px;
     margin-top : 80px;
-    margin-left : 120px;
     padding : 20px;
     display : inline-block;
             
     text-align : center;
     line-height: 50px;
     font-family : fantasy;
-}
-section img{
-    width: 1129px;
-    height: 100%;
+    color : #281277;
     
-    float : right;
-    
-    margin-top : -230px;
+    transition : 2s;
 }
