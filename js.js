@@ -3,19 +3,22 @@ $(function(){
         $("body").css("background","#5F5F5F");
         $("section").css("height","750px");
         $("section").css("width","1600px");
+        $("article").css("display","none");
         
-        setTimeout(function(){
             $("#ss_logo").css("display","inline-block");
             $("section img").css("display","block");
-        },1740)
     });
             
     $(".hangang").click(function(){
-        $("body").css("background","#5CB04C");
-        $("section").css("height","1500px");
-        $("section").css("width","900px");
+        $("body").css("background","#8390F0");
+        $("section").css("height","750px");
+        $("section").css("width","1800px");
         $("#ss_logo").css("display","none");
         $("section img").css("display","none");
+        
+        setTimeout(function(){
+            $("article").css("display","inline-block");
+        },1740);
     });
     
     var current = 0;

@@ -1,12 +1,12 @@
 *{margin : 0px; padding : 0px; transition : 2s;}
 body{
     background-color: #5F5F5F;
-    overflow-y: hidden;
+    margin-bottom : 40px;
 }
+
 Header{
     width: 1600px;
     height: 150px;
-    background-color: #5F5F5F;
     
     margin : 0 auto;
 }
@@ -20,6 +20,7 @@ Header span{
         
 nav ul{
     list-style : none;
+    
     float : right;
     margin-top : -40px;
     margin-right: 40px;
@@ -30,7 +31,7 @@ nav li {
             
     font-size : 20px;
 }
-nav li:after {content : "|"; margin : 30px;}
+nav li:after {content : "|"; margin : 30px; color : black}
 nav li:last-child:after {content : none;}
         
 section{
@@ -45,8 +46,10 @@ section{
     color : #281277;
 }
 article{
-    width: 470px;
-    height: 750px;
+    width: 100%;
+    height: 100%px;
+    
+    display : none;
 }
 #ss_logo{
     border-top: 5px solid black;
@@ -63,4 +66,8 @@ article{
     color : #281277;
     
     transition : 2s;
+}
+.home, .hangang{
+    cursor : pointer;
+    color : white;
 }

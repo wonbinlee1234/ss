@@ -5,11 +5,9 @@ img{
 .slide{
     width : 1129px;
     margin : 0 auto;
-    position : relative;
     overflow : hidden;
     
     float : right;
-    margin-top : -750px;
 }
 .slide ul{
     width : 7903px; 
