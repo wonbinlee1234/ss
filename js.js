@@ -4,17 +4,14 @@ $(function(){
         $("section").css("height","750px");
         $("section").css("width","1600px");
         $("article").css("display","none");
-        
-            $("#ss_logo").css("display","inline-block");
-            $("section img").css("display","block");
+        $("#main_wrap").css("display","block");
     });
             
     $(".hangang").click(function(){
         $("body").css("background","#8390F0");
         $("section").css("height","750px");
         $("section").css("width","1800px");
-        $("#ss_logo").css("display","none");
-        $("section img").css("display","none");
+        $("#main_wrap").css("display","none");
         
         setTimeout(function(){
             $("article").css("display","inline-block");
