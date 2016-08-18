@@ -10,38 +10,105 @@
   <title>Document</title>
  </head>
  <style>
- *{margin: 0; padding: 0;}
- .hover1 {width: 200px;	height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;}
+ *{margin: 0; padding: 0;  text-decoration:none;}
+ #wrap{width: 1500px; height: 750px;position:absolute; border: 10px solid;}
+  .c1 {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;font-family:고딕; display:inline-block}
+  .c2 {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;font-family:고딕;}
+  .c3 {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;font-family:고딕;}
+  .c4 {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;font-family:고딕;}
+  .c5 {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 1.5em; position:absolute;font-family:고딕;}
+  .ssc {width: 200px;height: 200px; text-align: center; line-height: 200px; border-radius: 50%; transition:all 1s; font-size: 2em; position:absolute;font-family:fantasy;}
 .effect1:hover { box-shadow: inset 0px 0px 0 100px rgba(0,0,0,0.5); color: #fff;}
-.line{width: 10px; height: 600px; background-color: black; position:absolute;}
+.line1{width: 10px; height: 600px; background-color: black; position:absolute; transition: 1.5s; opacity:0;}
+.line2{width: 10px; height: 600px; background-color: black; position:absolute; transition: 2.3s; opacity:0;}
+.line3{width: 10px; height: 300px; background-color: black; position:absolute; transition: 3.6s; opacity:0;}
+.line4{width: 10px; height: 600px; background-color: black; position:absolute; transition: 4.6s; opacity:0;}
+.line5{width: 10px; height: 550px; background-color: black; position:absolute; transition: 5.4s; opacity:0;}
+.c11{width: 250px; height: 200px; background-color:#03A9F4 ; position:absolute; display:inline-block; opacity : 0; transition : 1s; border-top-right-radius : 20%; border-bottom-right-radius : 20%;}
+.c12{width: 250px; height: 200px; background-color:#00E5FF ; position:absolute; display:inline-block; opacity : 0; transition : 1s; border-top-right-radius : 20%; border-bottom-right-radius : 20%;}
+.c13{width: 250px; height: 200px; background-color:#03A9F4 ; position:absolute; display:inline-block; opacity : 0; transition : 1s; border-top-right-radius : 20%; border-bottom-right-radius : 20%;}
+.c14{width: 250px; height: 200px; background-color:#A7FFEB ; position:absolute; display:inline-block; opacity : 0; transition : 1s; border-top-left-radius : 20%; border-bottom-left-radius : 20%;}
+.c15{width: 250px; height: 200px; background-color:#64FFDA ; position:absolute; display:inline-block; opacity : 0; transition : 1s; border-top-left-radius : 20%; border-bottom-left-radius : 20%;}
  </style>
  <body>
+ <div id="wrap"></div>	
  <div class="b_img"></div>
-<div class="hover1 effect1" style="margin-top: 500px; background-color:#cc33ff ;">
-		<span>원</span>
+<div class="c1 effect1" style="margin-top: 550px; margin-left:210px ; background-color:#03A9F4 ;">
+		<span><strong>한강이란?</strong></span>
 	</div>
-<div class="hover1 effect1" style="margin-top: 100px; margin-left: 250px; background-color:#66ffcc ;">
-		<span>투</span>
+<div class="c2 effect1" style="margin-top: 100px; margin-left: 90px; background-color:#00E5FF ;">
+		<span><strong>한강의 좋은점</strong></span>
 	</div>
-<div class="hover1 effect1" style="margin-top: 0px; margin-left: 800px; background-color:#3333cc ;">
-		<span>쓰리</span>
+<div class="c3 effect1" style="margin-top: 20px; margin-left: 690px; background-color:#03A9F4 ;">
+		<span><strong>한강의 역사</strong></span>
 	</div>
-<div class="hover1 effect1" style="margin-top: 100px; margin-left: 1300px; background-color:#33ff66 ;">
-		<span>포</span>
+<div class="c4 effect1" style="margin-top: 100px; margin-left: 1300px; background-color:#A7FFEB ;">
+		<span><strong>한강의 기적</strong></span>
 
 	</div>
-<div class="hover1 effect1" style="margin-top: 500px; margin-left: 1600px; background-color:#66ffff ;">
-		<span>파이브</span>
+<div class="c5 effect1" style="margin-top: 550px; margin-left: 1200px; background-color:#64FFDA ;">
+	<span><strong>한강 가볼만한곳</strong></span>
 	</div>
-<div class="hover1 effect1" style="margin-top: 500px; margin-left: 800px; background-color:#0099ff ;">
-		<span>연결고리</span>
+<div class="ssc effect1" style="margin-top: 350px; margin-left: 700px; background-color:#18FFFF ;">
+		<span class="ddd"">HanGang</span>
+		
 	</div>
-	<div class="line" style="margin-top: 300px; margin-left: 495px; transform:rotate(-90deg);"></div><!-- 1 -->
-	<div class="line" style="margin-top: 100px; margin-left: 650px; transform:rotate(125deg); z-index:-10;"></div><!-- 2 -->
-	<div class="line" style="margin-top: 100px; margin-left: 900px; z-index:-10;"></div><!-- 3 -->
-	<div class="line" style="margin-top: 100px; margin-left: 1150px; transform:rotate(-125deg); z-index:-10;"></div><!-- 4 -->
-	<div class="line" style="margin-top: 300px; margin-left:1295px ; transform:rotate(-90deg);"></div><!-- 5 -->
+	<div class="line1" style="margin-top: 250px; margin-left: 590px; transform:rotate(70deg); z-index:-10"></div><!-- 1 -->
+	<div class="line2" style="margin-top: 40px; margin-left: 490px; transform:rotate(-65deg); z-index:-10;"></div><!-- 2 -->
+	<div class="line3" style="margin-top: 100px; margin-left: 800px; z-index:-10;"></div><!-- 3 -->
+	<div class="line4" style="margin-top: 30px; margin-left: 1100px; transform:rotate(65deg); z-index:-10;"></div><!-- 4 -->
+	<div class="line5" style="margin-top: 310px; margin-left: 1100px ; transform:rotate(115deg); z-index:-10;"></div><!-- 5 -->
+	<div class="c11" style="margin-top: 550px; margin-left: 300px; z-index:-10; "><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;태백산맥에서 발원하여<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;강원도·충청북도·경기도<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·서울특별시를 동서로<br>&nbsp;&nbsp;&nbsp;&nbsp;흘러 황해로흘러들어가는 강이<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다.</div></span>
+	<div class="c12" style="margin-top: 100px; margin-left: 180px; z-index:-10;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;한강은 우리들에게 물을<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제공하고,휴식처로 이<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용되는데 스트레스<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가 쌓일때 한강 주<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;변에서 휴식을 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;취할 수 있다.</div>
+	<div class="c13" style="margin-top: 20px; margin-left: 800px; z-index:-10;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;한사군과 삼국시대 초기의<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 한강은 한반도의 중간 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;허리부분을 띠처럼<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;둘렀다는 뜻에서<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'대수' 라 불렀고,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 고구려에서는 '아리<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수' 라했으며,백제는 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'욱리하' 라고 했다..</div>
+	<div class="c14" style="margin-top: 100px; margin-left: 1148px; z-index:-10;"><p style="">&nbsp;&nbsp;&nbsp;우리나라는 6.25전쟁 때문<br>에 최빈국으로 전략했지<br>만, 몇 십년만에 경제대<br>국 15위 안에 들고, 1<br>인소득도 증가하였다. <br>이렇게 기적을 낳았다<br> 라는걸 한강의 기적<br> 이라고 부른다.</p></div>
+	<div class="c15" style="margin-top: 550px; margin-left: 1030px; z-index:-10">&nbsp;&nbsp;요즘 7월 15일부터 8월 21일<br>까지 강변 여름축제가 진행<br>되니 여기서 더위를 식히<br>는것도 괜찮을 것 같다.</div>	
  </body>
   <script type="text/javascript">
+ $(".ddd").hover(
+	function(){
+	 $(".line1,.line2,.line3,.line4,.line5").css("opacity","100");
+	},
+	function(){
+	 $(".line1,.line2,.line3,.line4,.line5").css("opacity","0");
+	});
+	$(".c1").hover(
+	function(){
+	 $(".c11").css("opacity","100");
+	},
+	function(){
+	 $(".c11").css("opacity","0");
+	});
+
+	$(".c2").hover(
+	function(){
+	 $(".c12").css("opacity","100");
+	},
+	function(){
+	 $(".c12").css("opacity","0");
+	});
+
+	$(".c3").hover(
+	function(){
+	 $(".c13").css("opacity","100");
+	},
+	function(){
+	 $(".c13").css("opacity","0");
+	});
+
+	$(".c4").hover(
+	function(){
+	 $(".c14").css("opacity","100");
+	},
+	function(){
+	 $(".c14").css("opacity","0");
+	});
+	$(".c5").hover(
+	function(){
+	 $(".c15").css("opacity","100");
+	},
+	function(){
+	 $(".c15").css("opacity","0");
+	});
  </script>
 </html>
