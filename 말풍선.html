@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="/JS/jquery-3.1.0.js"></script>
+  <title>Document</title>
+ </head>
+ <style>
+	p.message{margin-top: 70px; text-align: center;}
+	p.message a {display: inline-block;}
+	p.tooltip {display: none; position:absolute; width: 240px; border: 1px solid ; background-color: #fff padding: 2px; font-size: 13px; color: black;}	
+ </style>
+ <body>
+	<p id="tip2" class="message"><a href="#" title="황야의 노조미"><img src="C:/Users/원빈/Desktop/석양걸.jpg" width="400" height="400" border="0" alt=""></a></p>
+	<p class="tooltip"></p>
+  </div>
+ </body>
+ <script>
+	fn_tooltip('stage2','tip2', true, 'mouseover');
+	
+	function fn_tooltip(containerID,linkID,titleVar,event){
+		var $container = $('#'+containerID);
+		var $link = $container.find('#'+linkID).find('>a');
+		var $tooltip = $container.find('tooltip');
+
+		var title = titleVar;
+		var eventType = event;
+		var text = '';
+
+		if(title){
+			text = $link.attr('title');
+		}
+		$link.bind({
+			'mousemove' : function(e){
+				
+				var evnt = e;
+				showTooltip(evnt);
+			}
+		});
+ 		if(eventType=='mouseover'){
+			$link.unbind('mousemove');
+		}
+		function showTooltip(evnt){
+
+				var e = evnt;
+
+				if(eventType=='mousemove')
+				
+				var ex = e.pageX;
+				var ey = e.pageY;
+
+				var offset = $container.offset();
+				var offsetX = ex - offset.left;
+				var offsetY = ey - offset.top;
+			}
+			if(title){
+				$link.attr('title','');
+				$tooltip.html(text);
+			}
+			if(eventType=='mousemove' || eventType=='mousemove'){
+				var width = $tooltip.outerWidth();
+				var height = $tooltip.outerHeight();
+			}
+
+			$tooltip.show();
+
+			if(eventType=='mousemove' || eventType=='mousemove'){
+				$tooltip.css({ 'left' : offsetX, 'top' : offsetY-height-10});
+			}
+	}
+			function hideTooltip(){
+				$tooltip.hide();
+
+				if(title){
+					$tooltip.html('');
+					$(this).attr('title',text);
+				}
+			}
+ </script>	
+</html>
